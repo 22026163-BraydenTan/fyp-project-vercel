@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/middleware.js": {
+      "runtime": "edge"
+    }
+  }
+}
