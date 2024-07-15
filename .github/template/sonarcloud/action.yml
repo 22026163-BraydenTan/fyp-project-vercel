@@ -1,0 +1,17 @@
+name: run sonarcloud
+inputs:
+  GITHUB_TOKEN:
+    description: 'A Github PAT'
+    required: true
+  SONAR_TOKEN:
+    description: 'A Sonar PAT'
+    required: true
+    
+runs:
+  using: 'composite'
+  steps:
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v2.2.0
+      env:
+        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ inputs.SONAR_TOKEN }}
