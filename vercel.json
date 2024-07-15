@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/middleware.js": {
-      "runtime": "edge"
+      "runtime": "vercel-edge@1.0.0"
     }
   }
 }
