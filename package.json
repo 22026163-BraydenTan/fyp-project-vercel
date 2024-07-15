@@ -4,7 +4,7 @@
   "description": "Scan website for statistics",
   "main": "homepage.html",
   "scripts": {
-    "start": "node index.js",
+    "start": "node main.js",
     "build": "npm pack"
   },
   "dependencies": {
