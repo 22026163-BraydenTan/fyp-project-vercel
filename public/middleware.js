@@ -1,4 +1,4 @@
-export default function middleware(req) {
+export default function middleware(req, event) {
   return new Response(null, {
     headers: {
       'Referrer-Policy': 'origin-when-cross-origin',
