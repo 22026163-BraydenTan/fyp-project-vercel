@@ -3,5 +3,11 @@
     "api/middleware.js": {
       "runtime": "vercel-edge@1.0.0"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/.*",
+      "destination": "/api/middleware.js"
+    }
+  ]
 }
